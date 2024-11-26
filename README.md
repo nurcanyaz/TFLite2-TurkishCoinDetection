@@ -1,32 +1,34 @@
-# TFLite2-TurkishCoinDetection
-TFLite2-TurkishCoinDetection is an artificial intelligence model that identifies Turkish Lira coins using image processing and machine learning techniques. This project offers a lightweight and efficient classification model optimized with TensorFlow Lite for deployment on mobile and embedded devices.
+# TFLite2-TurkishCoinDetection  
 
-# Features
- Recognition of Turkish Lira Coins: The model classifies 1 TL, 50 kuruş, and other Turkish Lira coins based on their images.
 
-Mobile and Embedded Device Integration: With the benefits of TensorFlow Lite, the model can operate quickly and efficiently on low-resource devices.
 
-# Ease of Use
-The project provides a clear structure with step-by-step explanations for training and testing processes.
+**TFLite2-TurkishCoinDetection** is an AI model designed to detect and classify Turkish Lira coins using TensorFlow Lite. The model is lightweight and optimized for deployment on resource-constrained devices such as mobile and IoT systems.  
 
-# Technologies Used
-- TensorFlow Lite: For model optimization and adaptation for mobile devices.
-- Python: For data processing, model training, and testing.
-- OpenCV: For image processing and data preprocessing.
-# Project Structure
-- coin_model.ipynb: A Jupyter Notebook containing the model training and conversion processes.
-- images.zip: A dataset of coin images used for training and testing.
-- README.md: A detailed description of the project.
+## Features  
+- **Turkish Lira Coin Detection**: Accurately classifies coins like 1 TL and 50 kuruş.  
+- **TensorFlow Lite Support**: Optimized for mobile and embedded systems.  
+- **Simplified Training Workflow**: Supports data labeling using tools like LabelImg and Roboflow.  
 
-Requirements
-- Python 3.7+
-- TensorFlow and TensorFlow Lite
+## Technical Details  
+- **Model**: SSD Mobilenet V2 FPNLite 320x320  
+- **Training**: Built using TensorFlow Object Detection API and converted to TFLite format.  
+- **Performance**:  
+  - **Accuracy**: Over 90%  
+  - **mAP (mean Average Precision)**: 85%  
+
+## Use Cases  
+- Mobile applications to assist visually impaired individuals in recognizing coins.  
+- Real-time object detection systems for Turkish coins.  
+
+## Installation and Usage  
+
+### Requirements  
+- Python 3.7+  
+- TensorFlow  
 - OpenCV
-
-
-# Training and Testing the Model
-- Open the Jupyter Notebook and run the coin_model.ipynb file.
-- Once training is complete, the TensorFlow Lite model will be generated and ready for use.
+ 
+### Train the Model
+Run the coin_model.ipynb file in Jupyter Notebook to start the training process.
 
 # Example Usage
 Integrate the trained model into a mobile application to perform coin recognition using live camera feeds.
@@ -35,3 +37,6 @@ Integrate the trained model into a mobile application to perform coin recognitio
 - Enhance model performance with a more extensive and diverse dataset.
 - Optimize for real-time recognition capabilities.
 - Expand the model to recognize coins from different countries.
+
+
+See you next project:)
